@@ -1,3 +1,29 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<html>
+<script language="JavaScript">
+top.window.moveTo(0,0);
+//判断是否为IE浏览器
+if (document.all)
+{
+top.window.resizeTo(screen.availWidth,screen.availHeight);
+}
+//判断是否为Netscape浏览器(document.layers是Netscape 4.x专有的属性，由于
+//document.layers在Netscape6.0以后已经取消，此方法只适用于6.0之前的浏览器)
+else if (document.layers||document.getElementById)
+{
+if(top.window.outerHeight<screen.availHeight||
+top.window.outerWidth<screen.availWidth)
+{
+top.window.outerHeight = screen.availHeight;
+top.window.outerWidth = screen.availWidth;
+}
+}
+</script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <iframe src="http://150.158.43.87/phigros-html5-main/tapToStart/" width="100%" height="100%" frameborder="1/0" name="phigros" scrolling="yes/no/auto">
 </iframe>
+<head>
+</head>
+<body>
+</body>
+</html>
+
